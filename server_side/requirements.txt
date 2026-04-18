@@ -4,3 +4,6 @@ dotenv
 langchain-community
 langchain-core
 langchain-google-genai
+langchain-chroma
+langchain-huggingface
+sentence_transformers
