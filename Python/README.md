@@ -1,1 +1,0 @@
-# tumai-makeathon-2026
