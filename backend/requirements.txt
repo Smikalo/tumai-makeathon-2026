@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+langchain
+langchain-ollama
+langgraph
+langchain-chroma
+chromadb
+websockets
+pydantic
+python-dotenv
+playwright

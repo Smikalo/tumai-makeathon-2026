@@ -1,0 +1,181 @@
+<div style="padding: 1rem 0;">
+  <h2 class="sr-only">Campus Co-Pilot split view mockup: intent panel on left, live execution trace on right.</h2>
+
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-lg); padding: 12px; margin-bottom: 1rem;">
+
+    <div style="background: var(--color-background-primary); border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-tertiary); overflow: hidden;">
+
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; border-bottom: 0.5px solid var(--color-border-tertiary);">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="width: 22px; height: 22px; border-radius: 6px; background: var(--color-background-info); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; color: var(--color-text-info);">CC</div>
+          <span style="font-size: 13px; font-weight: 500;">Campus co-pilot</span>
+          <span style="font-size: 11px; color: var(--color-text-secondary); padding: 2px 8px; background: var(--color-background-secondary); border-radius: 999px;">TUM · Davyd S.</span>
+        </div>
+        <div style="display: flex; gap: 6px;">
+          <div style="width: 10px; height: 10px; border-radius: 50%; background: #EAF3DE; border: 0.5px solid #97C459;"></div>
+          <span style="font-size: 11px; color: var(--color-text-secondary);">4 agents live</span>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); min-height: 520px;">
+
+        <div style="border-right: 0.5px solid var(--color-border-tertiary); padding: 16px; display: flex; flex-direction: column; gap: 14px;">
+
+          <div>
+            <div style="font-size: 11px; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Your intent</div>
+            <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 10px 12px; font-size: 13px; line-height: 1.5;">
+              Find an empty study room near the math building at 2 PM today, summarize this week's new Moodle slides for discrete math, and register me for the Reply workshop on Tuesday.
+            </div>
+            <div style="display: flex; gap: 6px; margin-top: 8px;">
+              <span style="font-size: 11px; padding: 3px 8px; background: #E6F1FB; color: #0C447C; border-radius: 999px;">3 goals</span>
+              <span style="font-size: 11px; padding: 3px 8px; background: #EEEDFE; color: #3C3489; border-radius: 999px;">7 tools</span>
+              <span style="font-size: 11px; padding: 3px 8px; background: #E1F5EE; color: #085041; border-radius: 999px;">ETA 14s</span>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size: 11px; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Planner output</div>
+
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+
+              <div style="display: flex; gap: 10px; padding: 10px; border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); background: var(--color-background-primary);">
+                <div style="width: 20px; height: 20px; border-radius: 50%; background: #E1F5EE; color: #085041; font-size: 11px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">✓</div>
+                <div style="min-width: 0; flex: 1;">
+                  <div style="font-size: 13px; font-weight: 500;">Room booking agent</div>
+                  <div style="font-size: 12px; color: var(--color-text-secondary); line-height: 1.4;">MI 02.06.011 booked · 14:00–16:00</div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 10px; padding: 10px; border: 0.5px solid #85B7EB; border-radius: var(--border-radius-md); background: #E6F1FB;">
+                <div style="width: 20px; height: 20px; border-radius: 50%; background: #B5D4F4; color: #0C447C; font-size: 11px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0; position: relative;">
+                  <div style="width: 8px; height: 8px; border: 1.5px solid #0C447C; border-top-color: transparent; border-radius: 50%; animation: spin 0.9s linear infinite;"></div>
+                </div>
+                <div style="min-width: 0; flex: 1;">
+                  <div style="font-size: 13px; font-weight: 500; color: #042C53;">Moodle study agent</div>
+                  <div style="font-size: 12px; color: #0C447C; line-height: 1.4;">Parsing 3 slide decks · 62%</div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 10px; padding: 10px; border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); background: var(--color-background-primary); opacity: 0.75;">
+                <div style="width: 20px; height: 20px; border-radius: 50%; background: var(--color-background-secondary); color: var(--color-text-secondary); font-size: 11px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+                <div style="min-width: 0; flex: 1;">
+                  <div style="font-size: 13px; font-weight: 500;">Event registration agent</div>
+                  <div style="font-size: 12px; color: var(--color-text-secondary); line-height: 1.4;">Queued · Reply workshop Tue</div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 10px; padding: 10px; border: 0.5px dashed #F5C4B3; border-radius: var(--border-radius-md); background: #FAECE7;">
+                <div style="width: 20px; height: 20px; border-radius: 50%; background: #F0997B; color: #4A1B0C; font-size: 12px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">!</div>
+                <div style="min-width: 0; flex: 1;">
+                  <div style="font-size: 13px; font-weight: 500; color: #4A1B0C;">Conflict detected</div>
+                  <div style="font-size: 12px; color: #712B13; line-height: 1.4; margin-bottom: 6px;">Gym slot 17:30 overlaps S-Bahn delay</div>
+                  <button onclick="sendPrompt('Resolve the gym conflict — push it later or move to tomorrow?')" style="font-size: 11px; padding: 3px 8px; background: var(--color-background-primary); border: 0.5px solid var(--color-border-secondary); border-radius: 6px; cursor: pointer;">Resolve ↗</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div style="margin-top: auto;">
+            <div style="position: relative;">
+              <input type="text" placeholder="Ask or command..." style="width: 100%; padding-right: 60px;" />
+              <button onclick="sendPrompt('Add a 30-minute Karpathy video to my S-Bahn commute home')" style="position: absolute; right: 4px; top: 50%; transform: translateY(-50%); font-size: 11px; padding: 4px 10px;">Send</button>
+            </div>
+            <div style="font-size: 11px; color: var(--color-text-tertiary); margin-top: 6px;">⌘K for agents · ⌘/ for shortcuts</div>
+          </div>
+
+        </div>
+
+        <div style="background: var(--color-background-tertiary); display: flex; flex-direction: column;">
+
+          <div style="display: flex; gap: 0; border-bottom: 0.5px solid var(--color-border-tertiary); padding: 0 16px;">
+            <div style="font-size: 12px; padding: 10px 12px; border-bottom: 2px solid var(--color-text-primary); font-weight: 500;">Execution trace</div>
+            <div style="font-size: 12px; padding: 10px 12px; color: var(--color-text-secondary);">Calendar</div>
+            <div style="font-size: 12px; padding: 10px 12px; color: var(--color-text-secondary);">Logs</div>
+          </div>
+
+          <div style="padding: 16px; flex: 1; overflow-y: auto; font-family: var(--font-mono); font-size: 12px;">
+
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+              <span style="color: var(--color-text-tertiary);">14:02:11</span>
+              <span style="padding: 1px 6px; background: #EEEDFE; color: #3C3489; border-radius: 4px; font-size: 10px;">PLAN</span>
+              <span style="color: var(--color-text-primary);">Decomposed 3 sub-goals → dispatched agents</span>
+            </div>
+
+            <div style="margin-left: 12px; border-left: 1px solid var(--color-border-tertiary); padding-left: 14px; display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px;">
+
+              <div>
+                <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+                  <div style="width: 6px; height: 6px; background: #1D9E75; border-radius: 50%; margin-left: -17px;"></div>
+                  <span style="font-weight: 500; color: var(--color-text-primary); font-family: var(--font-sans); font-size: 13px;">room_booking_agent</span>
+                  <span style="color: var(--color-text-tertiary); font-size: 11px;">2.4s</span>
+                </div>
+                <div style="color: var(--color-text-secondary); line-height: 1.6;">
+                  → GET tum.de/roomfinder?building=MI&amp;from=14:00<br>
+                  ← 4 rooms free · ranked by distance<br>
+                  → POST tum.de/booking {room: "02.06.011"}<br>
+                  <span style="color: #085041;">✓ 200 OK · confirmation #RB-8841</span>
+                </div>
+              </div>
+
+              <div>
+                <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+                  <div style="width: 6px; height: 6px; background: #378ADD; border-radius: 50%; margin-left: -17px; animation: pulse 1.4s infinite;"></div>
+                  <span style="font-weight: 500; color: var(--color-text-primary); font-family: var(--font-sans); font-size: 13px;">moodle_study_agent</span>
+                  <span style="color: var(--color-text-tertiary); font-size: 11px;">running</span>
+                </div>
+                <div style="color: var(--color-text-secondary); line-height: 1.6;">
+                  → moodle.tum.de/course/view.php?id=IN0015<br>
+                  ← 3 PDFs · 47 slides total<br>
+                  → bedrock.invoke(claude-opus-4.6)<br>
+                  <span style="color: #185FA5;">◐ summarizing chunk 5/8...</span>
+                </div>
+              </div>
+
+              <div>
+                <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+                  <div style="width: 6px; height: 6px; background: var(--color-text-tertiary); border-radius: 50%; margin-left: -17px;"></div>
+                  <span style="font-weight: 500; color: var(--color-text-secondary); font-family: var(--font-sans); font-size: 13px;">event_registration_agent</span>
+                  <span style="color: var(--color-text-tertiary); font-size: 11px;">queued</span>
+                </div>
+                <div style="color: var(--color-text-tertiary); line-height: 1.6;">
+                  ⋯ waiting on calendar conflict check
+                </div>
+              </div>
+
+              <div>
+                <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+                  <div style="width: 6px; height: 6px; background: #EF9F27; border-radius: 50%; margin-left: -17px;"></div>
+                  <span style="font-weight: 500; color: var(--color-text-primary); font-family: var(--font-sans); font-size: 13px;">conflict_monitor</span>
+                  <span style="color: var(--color-text-tertiary); font-size: 11px;">proactive</span>
+                </div>
+                <div style="color: var(--color-text-secondary); line-height: 1.6;">
+                  → bahn.de/api/status?line=S4<br>
+                  ← delay: +22min on return leg<br>
+                  <span style="color: #854F0B;">⚠ raised flag · awaiting user resolution</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div style="margin-top: 12px; padding: 10px 12px; background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); font-family: var(--font-sans);">
+              <div style="font-size: 11px; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Ask the trace</div>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                <button onclick="sendPrompt('Why did you pick room MI 02.06.011 over the others?')" style="font-size: 11px; padding: 4px 10px;">Why this room? ↗</button>
+                <button onclick="sendPrompt('Show me the Moodle summary as soon as it is ready')" style="font-size: 11px; padding: 4px 10px;">Preview summary ↗</button>
+                <button onclick="sendPrompt('Replay the trace step by step for the judges')" style="font-size: 11px; padding: 4px 10px;">Replay for demo ↗</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+  </style>
+</div>

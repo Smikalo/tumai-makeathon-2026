@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-page:    #09090b;
+  --bg-sidebar: #111113;
+  --bg-panel:   #18181b;
+  --bg-card:    #222226;
+  --bg-hover:   #2c2c32;
+
+  --border-panel: rgba(255, 255, 255, 0.06);
+  --border-card:  rgba(255, 255, 255, 0.09);
+
+  --text-primary:   #f4f4f5;
+  --text-secondary: #71717a;
+  --text-tertiary:  #3f3f46;
+
+  --accent-blue:   #3b82f6;
+  --accent-teal:   #14b8a6;
+  --accent-purple: #8b5cf6;
+  --accent-amber:  #f59e0b;
+  --accent-green:  #22c55e;
+  --accent-red:    #ef4444;
+}
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+    background: var(--bg-page);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Slim scrollbars */
+::-webkit-scrollbar        { width: 4px; height: 4px; }
+::-webkit-scrollbar-track  { background: transparent; }
+::-webkit-scrollbar-thumb  { background: rgba(255,255,255,0.08); border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.14); }
+
+/* Trace line — left border appears on hover, color set via --tag-color inline var */
+.trace-line {
+  border-left: 2px solid transparent;
+  transition: border-color 0.1s, background 0.1s;
+}
+.trace-line:hover {
+  border-left-color: var(--tag-color, rgba(255,255,255,0.15));
+  background: rgba(255,255,255,0.025);
+}
+
+/* Animations */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.35; }
+}
+.animate-pulse-dot { animation: pulse-dot 1.4s ease-in-out infinite; }
+
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(74,222,128,0.5); }
+  60%       { box-shadow: 0 0 0 4px rgba(74,222,128,0); }
+}
+.animate-pulse-green { animation: pulse-green 1.8s ease-out infinite; }
+
+@keyframes scan-line {
+  0%   { top: 0%; }
+  100% { top: 100%; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Suggestion chip horizontal scroll — hide scrollbar */
+.chips-scroll { scrollbar-width: none; }
+.chips-scroll::-webkit-scrollbar { display: none; }
